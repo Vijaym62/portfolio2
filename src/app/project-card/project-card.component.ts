@@ -36,7 +36,7 @@ export class ProjectCardComponent {
 
   openProjectModal() {
     this.dialog.open(ProjectModalComponent, {
-      width: '60% ',height:'80%',
+      width: '60% ',
       data: { project: this.project }
     });
   }
