@@ -14,7 +14,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
-import { NgxCarouselModule } from 'ngx-carousel';
+// import { NgxCarouselModule } from 'ngx-carousel';
 
 
 

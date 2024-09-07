@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 // import { NgxCarouselModule } from 'ngx-carousel';
 // import { MatCarouselModule } from '@ngmodule/material-carousel
-import { NgxCarouselModule } from 'ngx-carousel';
+// import { NgxCarouselModule } from 'ngx-carousel';
 // import { MatCarouselModule } from '@ngmodule/material-carousel'
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ProjectService } from '../../services/project.service';
