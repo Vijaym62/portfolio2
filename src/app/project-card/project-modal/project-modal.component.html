@@ -1,0 +1,57 @@
+<mat-card class="p-4 shadow-lg mx-auto">
+  <mat-card-header>
+    <mat-card-title class="text-2xl font-bold">{{
+      data.project.name
+    }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content class="flex flex-col lg:flex-row gap-6">
+    <!-- Project Images Slider -->
+    <div class="relative min-[320px]:text-center max-[600px]">
+      <button
+        class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded"
+        (click)="prevImage()"
+      >
+        &#8249;
+      </button>
+      <img
+        [src]="data.project.pictures[currentImageIndex]"
+        alt="Project Image"
+        class="w-full h-96 object-cover rounded"
+      />
+      <button
+        class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded"
+        (click)="nextImage()"
+      >
+        &#8250;
+      </button>
+    </div>
+
+    <!-- Project Details -->
+    <div class="w-full">
+      <p class="text-gray-500 mb-2 font-medium">
+        {{ data.project.description }}
+      </p>
+      <p>You can find this project On GIthub</p>
+      <a
+        [href]="data.project.projectLink"
+        target="_blank"
+        class="text-blue-500 underline"
+      >
+        Project Link</a
+      >
+
+      <!-- Tags -->
+      <div class="mt-4 flex flex-wrap gap-2">
+        <mat-chip-list>
+          <mat-chip
+            *ngFor="let tag of data.project.tags"
+            [ngStyle]="{ 'background-color': tag.color, color: 'white' }"
+          >
+            {{ tag }}
+          </mat-chip>
+        </mat-chip-list>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

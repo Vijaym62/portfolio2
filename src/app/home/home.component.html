@@ -1,0 +1,83 @@
+<div class="container px-4 py-4">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <!-- About Me -->
+    <mat-card class="shadow-lg border p-4 bg-gray-50">
+      <div class="text-center">
+        <mat-card-header class="justify-center">
+          <mat-card-title class="text-xl font-semibold"
+            >About Me</mat-card-title
+          >
+        </mat-card-header>
+        <div class="flex justify-center mt-4">
+          <img
+            src="./assets/vijay99.jpg"
+            alt="profile picture"
+            class="w-48 h-48 lg:w-64 lg:h-64 object-cover object-center rounded-full border-4 border-white shadow-lg"
+          />
+        </div>
+        <mat-card-content>
+          <p class="mt-6 text-sm lg:text-base">
+            Hello, I'm Vijay Mali, a passionate Frontend Angular web developer
+            skilled in Angular and Node.js. I enjoy creating responsive and
+            efficient applications, with a focus on clean code and user-friendly
+            designs. I'm always eager to learn and take on new challenges in the
+            world of web development.
+          </p>
+        </mat-card-content>
+      </div>
+    </mat-card>
+
+    <!-- Featured Project -->
+    <mat-card class="shadow-lg border p-4 bg-gray-50">
+      <div class="text-center">
+        <mat-card-header>
+          <mat-card-title class="text-xl font-semibold"
+            >Featured Project</mat-card-title
+          >
+        </mat-card-header>
+        <mat-card-subtitle class="mt-2 font-medium">{{
+          featuredProject.name
+        }}</mat-card-subtitle>
+      </div>
+
+      <!-- Custom Carousel -->
+      <mat-card-content class="mt-4">
+        <div class="relative w-full h-64 overflow-hidden rounded-lg shadow-lg">
+          <div
+            class="absolute inset-0 flex transition-transform duration-500 ease-out"
+            [ngStyle]="{
+              transform: 'translateX(' + -currentSlide * 100 + '%)'
+            }"
+          >
+            <div
+              *ngFor="let picture of featuredProject.pictures"
+              class="w-full flex-shrink-0"
+            >
+              <img
+                [src]="picture"
+                alt="slide"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <div class="absolute inset-0 flex justify-between items-center px-4">
+            <button
+              (click)="prevSlide()"
+              class="bg-gray-900 bg-opacity-50 text-white rounded-full p-2"
+            >
+              &lt;
+            </button>
+            <button
+              (click)="nextSlide()"
+              class="bg-gray-900 bg-opacity-50 text-white rounded-full p-2"
+            >
+              &gt;
+            </button>
+          </div>
+        </div>
+        <p class="mt-6 text-sm lg:text-base">{{ featuredProject.summary }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

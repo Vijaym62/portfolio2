@@ -1,0 +1,121 @@
+<div class="container mx-auto px-4 py-4">
+  <div class="flex-col items-center">
+    <div class="w-full text-center">
+      <!-- Button to download resume -->
+      <button
+        mat-flat-button
+        color="primary"
+        class="mb-4 shadow border px-6 py-2 text-lg"
+        (click)="DownloadFile()"
+      >
+        Download Resume PDF
+      </button>
+
+      <!-- Expansion Panels within a mat-accordion -->
+      <mat-accordion class="w-full md:w-3/4 lg:w-1/2 mx-auto">
+        <!-- Work Experience Section -->
+        <mat-expansion-panel class="bg-white">
+          <mat-expansion-panel-header class="bg-gray-200">
+            <mat-panel-title class="justify-center text-lg">
+              Work Experience
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="bg-gray-200 p-4">
+            <h2 class="text-lg font-semibold mb-2 text-center">
+              Company: Absolute Software
+            </h2>
+            <ul class="list-disc list-inside text-center">
+              <li>Internship Trainee Developer</li>
+            </ul>
+          </div>
+        </mat-expansion-panel>
+
+        <!-- Education Section -->
+        <mat-expansion-panel class="bg-white">
+          <mat-expansion-panel-header class="bg-gray-200">
+            <mat-panel-title class="justify-center text-lg">
+              Education
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="bg-gray-200 p-4">
+            <ul class="list-disc list-inside text-center font-semibold">
+              <li class="mb-4">
+                G.H.Raisoni College of Engg. & Business Management, Jalgaon
+                <p class="font-semibold">(MCA)</p>
+              </li>
+              <li class="mb-4">
+                Arts, Commerce & Science College, Bodwad
+                <p class="font-semibold">(B.Sc, Computer Science)</p>
+              </li>
+              <li class="mb-4">
+                N.H.Ranka Highschool and Jr. College, Bodwad
+                <p>(12th Std)</p>
+              </li>
+              <li class="mb-4">
+                Rashtriya Madhyamik Vidyalaya, Bodwad
+                <p>(10th Std)</p>
+              </li>
+            </ul>
+          </div>
+        </mat-expansion-panel>
+
+        <!-- Certifications Section -->
+        <mat-expansion-panel class="bg-white">
+          <mat-expansion-panel-header class="bg-gray-200">
+            <mat-panel-title class="justify-center text-lg">
+              Certifications
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="p-4 bg-gray-200 text-gray-800">
+            <ul class="list-disc list-inside text-center">
+              <li class="mb-4">
+                Udemy
+                <p>Angular full course</p>
+              </li>
+              <li class="mb-4">
+                Udemy
+                <p>.Net web core full course</p>
+              </li>
+            </ul>
+          </div>
+        </mat-expansion-panel>
+
+        <!-- Skills Section -->
+        <mat-expansion-panel class="bg-white">
+          <mat-expansion-panel-header class="bg-gray-200">
+            <mat-panel-title class="justify-center text-lg">
+              Skills
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="bg-gray-200 p-4">
+            <h2 class="text-lg font-semibold mb-2 text-center">
+              Technology, Skills, Languages
+            </h2>
+            <ul class="list-disc list-inside text-center">
+              <li class="mb-4">
+                Programming Languages: HTML, CSS, JavaScript, TypeScript,
+                Node.js
+              </li>
+              <li class="mb-4">
+                Web Technologies: Angular, Express.js, Tailwind CSS, Angular
+                Material
+              </li>
+              <li class="mb-4">
+                Database Systems: MongoDB, JSON (for in-memory storage), RESTful
+                APIs
+              </li>
+              <li class="mb-4">Frontend Framework: Angular 17, Angular CLI</li>
+              <li class="mb-4">Backend Technologies: Node.js, Express.js</li>
+              <li class="mb-4">Version Control: GitHub</li>
+              <li class="mb-4">API Testing Tools: Postman</li>
+              <li class="mb-4">
+                UI/UX Design: Responsive Web Design, Tailwind CSS, Angular
+                Material
+              </li>
+            </ul>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>
