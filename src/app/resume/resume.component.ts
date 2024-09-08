@@ -36,8 +36,8 @@ expanded: any;
   DownloadFile(){
  const link =this.renderer.createElement('a');
  link.setAttribute('target','_blank');
- link.setAttribute('href', '/assets/VijaysmaliCV.pdf');
- link.setAttribute('download','VijaysmaliCV.pdf');
+ link.setAttribute('href', '/assets/VijayMaliCV.pdf');
+ link.setAttribute('download','VijayMaliResume.pdf');
 //  document.body.appendChild(link); 
  link.click();
  link.remove();
